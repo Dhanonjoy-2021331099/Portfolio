@@ -298,6 +298,12 @@ body {
     color: #385f60;
     font-weight: 600;
 }
+.stat:hover{
+     background: linear-gradient(135deg, #d98be6 0%, #ffffff 100%);
+    color: #333;
+    transform: translateY(-2px);    
+
+}
 
 .about-image img {
     width: 100%;
