@@ -30,13 +30,13 @@ body {
 }
 
 .nav-container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 60px;
 }
 
 .nav-logo span {
@@ -93,6 +93,31 @@ body {
 
 
 /* Hero Section */
+
+#home {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('realai.jpg'); /* Ensure correct path */
+  background-size: cover;           /* Responsive scaling */
+  background-position: center;      /* Center the image */
+  background-repeat: no-repeat;
+  opacity: 0.2;                    /* Light effect */
+  filter: blur(1px) brightness(90%);
+  z-index: -1;
+  pointer-events: none;
+  transition: background-size 0.3s ease; /* Smooth resize on smaller screens */
+}
+
 .hero {
     min-height: 100vh;
     display: flex;
@@ -299,7 +324,7 @@ body {
     font-weight: 600;
 }
 .stat:hover{
-     background: linear-gradient(135deg, #d98be6 0%, #ffffff 100%);
+     background: linear-gradient(135deg, #180f19 0%, #ae8e8e 100%);
     color: #333;
     transform: translateY(-2px);    
 
@@ -308,12 +333,15 @@ body {
 .about-image img {
     width: 100%;
     border-radius: 15px;
-    box-shadow: 0 20px 40px rgba(114, 84, 84, 0.1);
+    box-shadow: 0 20px 40px rgba(209, 200, 200, 0.1);
 }
 
 /* Skills Section */
 .skills {
     padding: 100px 0;
+    padding: 100px 0;
+    background: linear-gradient(135deg, #31243c 0%, #7346a0 100%);
+
 }
 
 .skills-grid {
@@ -323,7 +351,7 @@ body {
 }
 
 .skill-card {
-    background: white;
+    background: rgb(226, 208, 208);
     padding: 2rem;
     border-radius: 15px;
     text-align: center;
@@ -356,7 +384,9 @@ body {
 /* Projects Section */
 .projects {
     padding: 100px 0;
-    background: #f8fafc;
+    padding: 100px 0;
+    background: linear-gradient(135deg, #39616f 0%, #9a68cd 100%);
+
 }
 
 .projects-grid {
@@ -366,7 +396,7 @@ body {
 }
 
 .project-card {
-    background: white;
+    background: rgb(192, 176, 176);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -468,6 +498,8 @@ body {
 /* Contact Section */
 .contact {
     padding: 100px 0;
+    background: linear-gradient(135deg, #000000 0%, #7346a0 100%);
+
 }
 
 .contact-content {
@@ -532,7 +564,7 @@ body {
 }
 
 .contact-form {
-    background: #f8fafc;
+    background: #b2bdc6;
     padding: 2rem;
     border-radius: 15px;
 }
@@ -545,7 +577,7 @@ body {
 .form-group textarea {
     width: 100%;
     padding: 1rem;
-    border: 2px solid #e2e8f0;
+    border: 2px solid #495c76;
     border-radius: 10px;
     font-family: inherit;
     font-size: 1rem;
@@ -571,6 +603,7 @@ body {
 }
 
 /* Responsive Design */
+
 @media (max-width: 768px) {
     .nav-menu {
         position: fixed;
