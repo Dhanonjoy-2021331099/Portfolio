@@ -1,15 +1,20 @@
-# Welcome to my personal portfolio website! This site showcases my projects,skills and as a passionate learner and developer.
+# Welcome to my personal portfolio website!
 # View Live Portfolio : [ https://dhanonjoy-2021331099.github.io/Portfolio/ ]
 # Build with HTML5 and CSS
 # Features: Responsive design for all devices
-#
-# Portfolio Repository
-# ├── index.html             👉 Main HTML structure of the website
-# ├── style.css              👉 Root CSS file (imports other CSS files)
-# ├── sections/
-# │   ├── header.css         👉 Styling for the header section
-# │   ├── about.css          👉 Styling for the about section
-# │   ├── projects.css       👉 Styling for the projects section
-# │   ├── contact.css        👉 Styling for the contact section
-# │   └── footer.css         👉 Styling for the footer section
+# File Organization:
+# All CSS files are modularized based on the section of the portfolio website. The `style.css` file acts as the main CSS file and imports all others using `@import`.
+# Each CSS file is responsible for styling a specific part of the website:
+
+# - `Navigation.css` → Navigation bar
+# - `Herrosection.css` → Hero/Intro section
+# - `aboutsection.css` → About Me section
+# - `skillsection.css` → Skills display
+# - `projectsection.css` → Project showcase
+# - `contactsection.css` → Contact form section
+# - `footer.css` → Footer section
+# - `background.css` → Background styles (colors/images)
+# - `section.css` → General section-level layout and padding/margin
+# - `responsive.css` → Responsive design for mobile and tablets
+
 
