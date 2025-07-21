@@ -52,8 +52,9 @@ body {
 
 .nav-link {
     text-decoration: none;
-    color: #9cd1e9;
+    color: #2985af;
     font-weight: 500;
+    font-size: 20px;
     transition: color 0.3s ease;
     position: relative;
 }
@@ -86,7 +87,7 @@ body {
 .bar {
     width: 30px;
     height: 3px;
-    background-color: #d6eadf;
+    background-color: #ddf9e9;
     margin: 3px 0;
     transition: 0.3s;
 } 
@@ -340,7 +341,7 @@ body {
 .skills {
     padding: 100px 0;
     padding: 100px 0;
-    background: linear-gradient(135deg, #31243c 0%, #7346a0 100%);
+    background: linear-gradient(135deg, #31243c 0%, #261b1b 100%);
 
 }
 
@@ -603,7 +604,6 @@ body {
 }
 
 /* Responsive Design */
-
 @media (max-width: 768px) {
     .nav-menu {
         position: fixed;
